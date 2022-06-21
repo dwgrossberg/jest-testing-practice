@@ -14,7 +14,7 @@ it("reversed1", () => {
 });
 
 it("reversed2", () => {
-  expect(reverseString("AaBbCcDdEe")).toBe("eEdDcCbBaA");
+  expect(reverseString("Aa Bb Cc Dd Ee")).toBe("eE dD cC bB aA");
 });
 
 it("reversed3", () => {
