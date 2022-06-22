@@ -10,6 +10,7 @@ it("returns a number", () => {
   expect(typeof calc.add(1, 1)).toBe("number");
   expect(typeof calc.subtract(1, 1)).toBe("number");
   expect(typeof calc.multiply(1, 1)).toBe("number");
+  expect(typeof calc.divide(1, 1)).toBe("number");
 });
 
 it("adds positive integers", () => {
@@ -81,5 +82,5 @@ it("divides strings", () => {
 });
 
 it("can't divide by zero", () => {
-  expect(calc.multiply(9.4, 0)).toBe(0);
+  expect(calc.divide(9.4, 0)).toBe(Infinity);
 });
